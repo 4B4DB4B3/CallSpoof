@@ -12,6 +12,9 @@ section '.text' code readable writeable executable
                 mov eax, [eax+0x0c]
                 mov esi, [eax+0x14]
                 lodsd
+                ; xor esi, eax
+                ; xor eax, esi
+                ; xor esi, eax
                 xchg esi, eax
                 lodsd
                 mov eax, [eax+0x10]
